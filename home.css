@@ -71,11 +71,10 @@ h1 {
     flex: 2;
   }
 
-  /* Add this CSS to your home.css file */
 
 .buttons {
     display: inline-block;
-    text-align: left; /* Optional: Centers the buttons horizontally */
+    text-align: left;
   }
   
   .buttons button {
@@ -99,9 +98,9 @@ h1 {
 
   .no-wrap {
     white-space: nowrap;
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding on the list */
-    margin: 0; /* Remove default margin on the list */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     justify-items: left;
 }
 
@@ -142,9 +141,8 @@ h1 {
 .abt.active,
 .exp.active,
 .con.active {
-  background-color: #000; /* Example background color */
-  color: #563D7C; /* Black text color */
-  /* Add other styles as needed */
+  background-color: #000;
+  color: #563D7C;
 }
 
 #contact-con {
