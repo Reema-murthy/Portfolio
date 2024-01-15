@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    display:flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile-section {
+    flex: 2;
+    background-color: #563D7C;
+    height: 100vh;
+}
+
+.details {
+    flex: 3;
+    height: 100vh;
+    background-color: black;
+}
+
+.profile {
+    padding-top: 18%;
+    padding-left: 10% !important;
+    padding-bottom: 20%;
+    font-weight: 600;
+    line-height: 1.1;
+    font-size:40px ;
+}
+
+
+.content {
+    display: none;
+  }
+  
+  .content.active {
+    display: block;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #563D7C;
+  }
+
+  #about {
+    flex: 2;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  #experiences {
+    flex: 2;
+    margin-bottom: 20px;
+  }
+
+  #education {
+    flex: 2;
+    margin-bottom: 20px;
+  }
+
+  #contact {
+    flex: 2;
+  }
+
+  /* Add this CSS to your home.css file */
+
+.buttons {
+    display: inline-block;
+    text-align: left; /* Optional: Centers the buttons horizontally */
+  }
+  
+  .buttons button {
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    padding-right: 30px;
+    border-top-right-radius: 8px;
+    background-color: #563D7C;
+  }
+  
+  #educationContent {
+    padding-top: 90px !important;
+    
+  }
+
+  .card {
+    background-color: black !important;
+  }
+
+  .no-wrap {
+    white-space: nowrap;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding on the list */
+    margin: 0; /* Remove default margin on the list */
+    justify-items: left;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  color: #563D7C;
+}
+
+.header {
+  flex: 3;
+}
+
+.body-2 {
+  flex: 4;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons {
+  flex: 1;
+}
+
+.images {
+  flex: 5;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.educ.active,
+.abt.active,
+.exp.active,
+.con.active {
+  background-color: #000; /* Example background color */
+  color: #563D7C; /* Black text color */
+  /* Add other styles as needed */
+}
+
+#contact-con {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}

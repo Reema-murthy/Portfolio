@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="body">
+        <div class="profile-section">
+            <div class="container profile" style="color: black;">
+                <p>Hi there,</p>
+                <p>I'm Reema Murthy</p>
+                <img src="assets/Reema_final.jpg" style="max-width: 400px; clip-path: circle(50%); object-fit: cover; margin-left: 35px; margin-top: 30px;">
+            </div>
+        </div>
+        <div class="details">
+          <div class="header">
+          <div class="head">
+            <div class="buttons">
+                <div id="about">
+                    <button class="section abt" onclick="showContent('aboutContent', null, this)">About Me</button>
+                </div>
+                <div id="education">
+                    <button class="section educ" onclick="showContent('educationContent', 'eduimg', this); activateButton(this);">Education</button>
+                </div>
+                <div id="experiences">
+                    <button class="section exp" onclick="showContent('experiencesContent', null, this); activateButton(this);">Experiences</button>
+                </div>
+                <div id="contact">
+                    <button class="section con" onclick="showContent('contactContent', 'conimg', this); activateButton(this);">Contact Me</button>
+                </div>
+            </div>
+            <div class="images" style="padding-left: 15px;">
+              <img id="eduimg" src="assets/edu.png" alt="sans" style="height:300px; padding-top: 30px;">
+              <img id="conimg" src="assets/email.png" alt="sans" style="height:300px; padding-top: 30px; margin-left: 15px !important;">
+            </div>
+          </div>
+        </div>
+          <div class="body-2">
+            <!-- Content for different sections -->
+            <div id="aboutContent" class="content">
+                <section class="py-3 py-md-5">
+                    <div class="container overflow-hidden">
+                      <div class="row gy-2 gy-md-0 justify-content-xxl-center">
+                        <div class="col-12 order-md-1 col-md-8 col-xxl-6">
+                          <div class="text-center text-md-start">
+                            <h2 class="display-4 fw-bold lh-1">About me,</h2>
+                            <hr class="w-25 mx-auto ms-md-0 mb-4 text-secondary">
+                            <p>I am an engineering student currently in my 4th semester and am a web enthusiast</p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            </div>
+            
+            <div id="educationContent" class="content text-center">
+                <div class="container">
+                    <div class="row" style="padding-left: 150px !important;">
+                        <div class="col-md-2">
+                            <img src="assets/nitk-logo.png" alt="sans" style="width:100px; height:80px">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 25px; font-weight: 700; color: #563D7C">
+                                        <a href="https://www.nitk.ac.in" style="text-decoration: none; color: inherit;" target="_blank">
+                                            National Institute Of Technology Karnataka, Surathkal
+                                        </a>
+                                    </h5>                                
+                                    <p class="card-text">
+                                        <ul class="no-wrap text-left" style="color: #563D7C; font-weight: 500;">
+                                            <li>Bachelor of Technology (Batch of 2026)</li>
+                                            <li>- Major: Computer Science and Engineering</li>
+                                            <li>- Minor: Management</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="experiencesContent" class="content">
+                <div class="container">
+                    <p style="padding-left: 10%; font-size: 25px; font-weight: 400;">Worked on :</p>
+                    <div class="row">
+                        <div class="col-md-6" style="padding-left: 100px !important; padding-top: 20px !important;">
+                            <div class="card">
+                                <a href="http://telephone.nitk.ac.in">
+                                <img class="card-img-top" src="assets/tele-dir.png" alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text" style="color: #563D7C;">The telephone directory website for NITK</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="padding-right: 100px !important; padding-top: 20px !important;">
+                                <img class="card-img-top" src="assets/inci.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text" style=" color: #563D7C;">The NITK incident website for 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div id="contactContent" class="content">
+                <section id="contact-con">
+                    <p class="section__text__p1" style="padding-left: 43%;"></p>
+                    <h1 class="title" style="padding-left: 35%;">Get in Touch</h1>
+                    <div class="contact-info-upper-container">
+                      <div class="contact-info-container">
+                        <img
+                          src="assets/mail.png"
+                          alt="Email icon"
+                          class="icon contact-icon email-icon"
+                        />
+                        <p><a href="mailto:reemamurthy12@gmail.com" style="text-decoration: none; color: #563D7C;">reemamurthy12@gmail.com</a></p>
+                      </div>
+                      <div class="contact-info-container">
+                        <img src="assets/github.png" alt="LinkedIn icon" class="icon contact-icon" style="width:50px;"/>
+                        <p><a href="https://www.linkedin.com" style="text-decoration: none; color: #563D7C;">GitHub</a></p>
+                      </div>
+                    </div>
+                  </section>
+                
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Activate the Education button initially
+        activateButton(document.getElementById('education').querySelector('button'));
+    
+        function showContent(contentId, imgId, button) {
+            // Hide all content divs
+            const contentDivs = document.querySelectorAll('.content');
+            contentDivs.forEach(div => div.classList.remove('active'));
+
+            // Hide all images
+            const imgElements = document.querySelectorAll('.images img');
+            imgElements.forEach(img => img.style.display = 'none');
+    
+            // Show the selected content div
+            document.getElementById(contentId).classList.add('active');
+    
+            // Show the corresponding image
+            if (imgId) {
+                const imgElement = document.getElementById(imgId);
+                imgElement.style.display = 'block';
+            }
+    
+            // Update the active button
+            activateButton(button);
+        }
+    
+        // Add this function to activate the button
+        function activateButton(button) {
+            // Check if the button is not already active
+            if (!button.classList.contains('active')) {
+                // Remove 'active' class from all buttons
+                const buttons = document.querySelectorAll('.section');
+                buttons.forEach(btn => btn.classList.remove('active'));
+    
+                // Add 'active' class to the clicked button
+                button.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
