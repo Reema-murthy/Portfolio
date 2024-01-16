@@ -181,3 +181,18 @@ h1 {
 .email-icon {
   height: 2.5rem;
 }
+
+@media (min-width:320px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-section {
+    flex: 5;
+  }
+
+  .details {
+    flex: 4;
+  }
+}
