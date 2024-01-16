@@ -182,7 +182,7 @@ h1 {
   height: 2.5rem;
 }
 
-@media (min-width:320px) {
+@media (max-width:320px) {
   .body {
     display: flex;
     flex-direction: column;
@@ -198,4 +198,14 @@ h1 {
     flex: 6;
     width: 100vw;
   }
+}
+
+#expimg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.imgexp {
+  flex:1;
 }

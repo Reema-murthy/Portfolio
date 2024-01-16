@@ -20,13 +20,13 @@
           <div class="head">
             <div class="buttons">
                 <div id="about">
-                    <button class="section abt" onclick="showContent('aboutContent', 'abtimg', this)">About Me</button>
+                    <button class="section abt" onclick="showContent('aboutContent', 'abtimg', this);  activateButton(this);">About Me</button>
                 </div>
                 <div id="education">
                     <button class="section educ" onclick="showContent('educationContent', 'eduimg', this); activateButton(this);">Education</button>
                 </div>
                 <div id="experiences">
-                    <button class="section exp" onclick="showContent('experiencesContent', null, this); activateButton(this);">Experiences</button>
+                    <button class="section exp" onclick="showContentExp('experiencesContent', 'expimg', this); activateButton(this);">Experiences</button>
                 </div>
                 <div id="contact">
                     <button class="section con" onclick="showContent('contactContent', 'conimg', this); activateButton(this);">Contact Me</button>
@@ -36,6 +36,12 @@
               <img id="eduimg" src="assets/edu.png" alt="sans" style="height:300px;">
               <img id="conimg" src="assets/email.png" alt="sans" style="height:300px;">
               <img id="abtimg" src="assets/abt.png" alt="sans" style="height:300px;">
+              <div id="expimg">
+              <img class="imgexp" src="assets/c.png" alt="sans" style="height:50px; padding: 5px;">
+              <img class="imgexp" src="assets/html.png" alt="sans" style="height:50px; padding: 5px;">
+              <img class="imgexp" src="assets/css.png" alt="sans" style="height:50px; padding: 5px;">
+              <img class="imgexp" src="assets/bootstrap.png" alt="sans" style="height:50px; padding: 5px;">
+              </div>
             </div>
           </div>
         </div>
@@ -87,7 +93,7 @@
                 <div class="container">
                     <p style="padding-left: 10%; font-size: 25px; font-weight: 400;">Worked on :</p>
                     <div class="row">
-                        <div class="col-md-6" style="padding-left: 100px !important; padding-top: 20px !important;">
+                        <div class="col-md-6" style="padding-left: 100px !important; padding-top: 5px !important;">
                             <div class="card">
                                 <a href="http://telephone.nitk.ac.in">
                                 <img class="card-img-top" src="assets/tele-dir.png" alt="Card image cap">
@@ -98,7 +104,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card" style="padding-right: 100px !important; padding-top: 20px !important;">
+                            <div class="card" style="padding-right: 100px !important; padding-top: 5px !important;">
                                 <img class="card-img-top" src="assets/inci.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <p class="card-text" style=" color: #563D7C;">The NITK incident website for 2024</p>
@@ -141,10 +147,9 @@
             imgElements.forEach(img => img.style.display = 'none');
 
             document.getElementById('aboutContent').classList.add('active');
-            if ('abtimg') {
-                const imgElement = document.getElementById('abtimg');
-                imgElement.style.display = 'block';
-            }
+
+            const imgElement = document.getElementById('abtimg');
+            imgElement.style.display = 'block';
     
         function showContent(contentId, imgId, button) {
             // Hide all content divs
@@ -167,6 +172,32 @@
             // Update the active button
             activateButton(button);
         }
+
+    function showContentExp(contentId, imgId, button) {
+    // Hide all content divs
+    const contentDivs = document.querySelectorAll('.content');
+    contentDivs.forEach(div => div.classList.remove('active'));
+
+    // Hide all images
+    const imgElements = document.querySelectorAll('.images img');
+    imgElements.forEach(img => img.style.display = 'none');
+
+    // Show the selected content div
+    document.getElementById(contentId).classList.add('active');
+
+    if (imgId) {
+        // If imgId is a div id, find the image inside that div and display it
+        const imgContainer = document.getElementById(imgId);
+        const imgElements = imgContainer.querySelectorAll('.imgexp');
+        imgElements.forEach(imgElement => {
+            imgElement.style.display = 'block';
+        });
+    }
+
+    // Update the active button
+    activateButton(button);
+}
+
     
         function activateButton(button) {
             // Check if the button is not already active
