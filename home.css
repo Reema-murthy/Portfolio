@@ -190,9 +190,11 @@ h1 {
 
   .profile-section {
     flex: 5;
+    width: 100vw;
   }
 
   .details {
     flex: 4;
+    width: 100vw;
   }
 }
