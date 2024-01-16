@@ -186,6 +186,7 @@ h1 {
   .body {
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
 
   .profile-section {
@@ -194,7 +195,7 @@ h1 {
   }
 
   .details {
-    flex: 4;
+    flex: 6;
     width: 100vw;
   }
 }
